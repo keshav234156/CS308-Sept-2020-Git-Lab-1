@@ -14,10 +14,11 @@ int main(int argc, char* argv[]) {
 	int input = atoi(argv[1]);
 	if(input < 0) {
 		printf("Number should be positive");
+		printf("“End of program. Exiting.”");
 		return(0);
 	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("Hello");
+	printf("“End of program. Exiting.”");
 	return(0);
 
 } // end main
