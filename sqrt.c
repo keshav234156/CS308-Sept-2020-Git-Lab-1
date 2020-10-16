@@ -12,14 +12,14 @@ bool validnumber(int number) {
 
 void negativeSupport(int n)  {
 	n = -1 * n;
-	printf("DEBUG: Sqrt of %d is %fi\n", n, sqrt(n));
-	printf("DEBUG: End of program. Exiting\n");
+	printf("NEGSUPPORT:Sqrt of %d is %fi\n", n, sqrt(n));
+	printf("NEGSUPPORT:End of program. Exiting\n");
 	return;
 }
 
 int main(int argc, char* argv[]) {	
 	if (argc != 2) {
-		printf("DEBUG: Usage: sqrt input\n\n");
+		printf("NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 
@@ -28,8 +28,8 @@ int main(int argc, char* argv[]) {
 		negativeSupport(input);
 		return(0);
 	}
-	printf("DEBUG: Sqrt of %d is %f\n",input,sqrt(input));
-	printf("“DEBUG: End of program. Exiting in negativeSupport branch.”");
+	printf("NEGSUPPORT:Sqrt of %d is %f\n",input,sqrt(input));
+	printf("“NEGSUPPORT:End of program. Exiting in negativeSupport branch.”");
 	return(0);
 
 } // end main
