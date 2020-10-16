@@ -4,6 +4,11 @@ positive number. */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+bool validnumber(int number) {
+	if(number < 0) 
+		return false;
+	return true;
+}
 
 int main(int argc, char* argv[]) {	
 	if (argc != 2) {
@@ -12,7 +17,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	int input = atoi(argv[1]);
-	if(input < 0) {
+	if(!validnumber(input)) {
 		printf("Number should be positive");
 		printf("“End of program. Exiting.”");
 		return(0);
