@@ -29,7 +29,7 @@ int main(int argc, char* argv[]) {
 		return(0);
 	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("“End of program. Exiting.”");
+	printf("“End of program. Exiting in main branch”");
 	return(0);
 
 } // end main
