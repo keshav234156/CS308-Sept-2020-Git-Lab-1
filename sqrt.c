@@ -10,6 +10,13 @@ bool validnumber(int number) {
 	return true;
 }
 
+void negativeSupport(int n)  {
+	n = -1 * n;
+	printf("Sqrt of %d is %fi\n", n, sqrt(n));
+	printf("End of program. Exiting\n");
+	return;
+}
+
 int main(int argc, char* argv[]) {	
 	if (argc != 2) {
 		printf("Usage: sqrt input\n\n");
@@ -18,8 +25,7 @@ int main(int argc, char* argv[]) {
 
 	int input = atoi(argv[1]);
 	if(!validnumber(input)) {
-		printf("Number should be positive");
-		printf("“End of program. Exiting.”");
+		negativeSupport(input);
 		return(0);
 	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
